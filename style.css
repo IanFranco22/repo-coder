@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: gray;
+    height: 100%;
+}
+body{
+    min-height: 2000px;
+}
+h1{
+    padding: 40px;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: rgb(158, 194, 248);
+}
+a {
+text-decoration: none;
+}
+header{
+    background-color: rgb(158, 194, 248);
+    text-align: center;
+}
+
+.pie{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(105, 87, 87) ;
+    width: 100%;
+    height: 80px;
+    border-top: 5px blue double;
+}
+.pie p{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.paginas{
+    display: block;
+    background-color: rgb(158,194,248);
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 5px blue double;
+}
+
+/* .pie {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    color: grey;
+    background-color: rgb(105, 87, 87);
+    width: 100%;
+} */
+.equipo{
+    background-color:  rgb(185, 182, 181);
+}
+.equipo li{
+    color:rgb(161, 11, 136);
+    font-weight: 600;
+}
+.menu{
+    background-color: rgb(185, 182, 181);
+}
+.menu ul{
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    margin:0 50px 0 50px;
+    grid-template-columns: repeat(4, 1fr);
+    border: 7px, rgb(39, 3, 243), double;
+    border-radius: 10px;
+}
+
+.menu li{
+    font-size: 25px;
+    justify-items: center;
+
+    text-align: center;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: 5px blue double;
+    background-color:  rgb(185, 182, 181);
+    font-size: 20px;
+}
+
+.servicios div{
+    padding: 30px;
+    border: 5px blue double;
+    border-radius: 10px;    
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(196, 2, 255);
+    font: bolder;
+    padding: 5px;
+}
+.like{
+    background-color: rgb(13, 248, 13);
+}
+.disl{
+    background-color: red;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.parr {
+    font-size: 20px; 
+    background-color:  rgb(185, 182, 181);
+    height: 150px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px blue double;
+    border-radius: 10px;
+    
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "it1 ."
+    ". it2"
+    "it3 ."
+    ". it4";
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+.nosotros div{
+    border: 5px green solid;
+}
+.item1{
+    grid-area: it1;
+}
+.item2{
+    grid-area: it2;
+}
+.item3{
+    grid-area: it3;
+}
+.item4{
+    grid-area: it4;
+}
+.mision-vision{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-evenly;
+}
+.paginas{
+    padding-top: 30px;
+}
+.opiniones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(185, 182, 181);
+    grid-template-areas:
+    ". opi1"
+    "opi2 ."
+    ". opi3"
+    "opi4 ."
+}
+.opi1{
+    grid-area: opi1;
+}
+.opi2{
+    grid-area: opi2;
+}
+.opi3{
+    grid-area: opi3;
+}
+.opi4{
+    grid-area: opi4;
+}
+.mision{
+    background-color: rgb(221, 236, 134);
+    border: 5px green solid;
+}
+.mision h3{
+    color: rgb(80, 77, 238) ;
+}
+.vision{
+    background-color: rgb(80, 77, 238);
+    border: 5px green solid;
+}
+.vision h3{
+    color:  rgb(221, 236, 134);
+}
+.contacto {
+    display: flex;
+    flex-direction: row;        
+    justify-content: center;
+    align-items: center;         
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;         
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+.cajitas{
+    width: 300px;
+    margin-bottom: 40px;
+    border: 5px rgb(7, 235, 252) solid;
+}
+.formulario {
+    text-align: center;
+padding: 40px;
+}
+
+.cajitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.cajitas label, 
+.cajitas input, 
+.cajitas textarea {
+    width: 100%;
+    max-width: 300px;
+}
+
+.cajitas input,
+.cajitas textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cajitas input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+}
