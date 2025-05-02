@@ -294,6 +294,9 @@ padding: 40px;
         justify-content: space-around;
         width: 100vw;
     }
+    .servicios div{
+        padding: 10px;
+    }
     .nosotros{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
