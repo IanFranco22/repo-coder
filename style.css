@@ -80,16 +80,18 @@ header{
     color:rgb(161, 11, 136);
     font-weight: 600;
 }
+
 .menu{
-    background-color: rgb(185, 182, 181);
-}
-.menu ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     gap: 30px;
-    border: none
+    border: none;
+    font-size: 25px;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(185, 182, 181);
 }
 .menu p{
     font-size: 30px;
@@ -102,10 +104,9 @@ header, h2{
 }
 
 
-.menu li{
-    font-size: 25px;
-    justify-items: center;
-    text-align: center;
+
+.menu img{
+    width: 200px;
 }
 
 .servicios{
@@ -204,6 +205,10 @@ button{
     background-color: rgb(185, 182, 181);
     gap: 20px;
 }
+.opiniones div{
+    border: 5px double blue;
+    border-radius: 10px;
+}
 
 .contacto {
     display: flex;
@@ -298,7 +303,7 @@ padding: 40px;
     display: block;
 }
 @media (min-width: 600px) {
-    .menu ul{
+    .menu {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -323,13 +328,26 @@ padding: 40px;
     body{
         min-height: 100vw;
     }
-    .menu ul{
+    .menu {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        border: 7px, rgb(39, 3, 243), double;
+        border: 7px double rgb(39, 3, 243);
         border-radius: 10px;
-        gap: 0;
+        gap: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    .menu img{
+        width: 200px;
+    }
+    .menu p{
+        font-size: 20px;
+    }
+    .menu div{
+        width: 300px;
+        height: 350px;
+        border: 5px double blue;
     }
     .servicios{
         display: flex;
