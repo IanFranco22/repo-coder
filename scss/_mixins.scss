@@ -1,0 +1,17 @@
+@mixin flex-column($gap: 10px) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border-rounded($color) {
+    border: 5px solid $color;
+    border-radius: 10px;
+}
+
