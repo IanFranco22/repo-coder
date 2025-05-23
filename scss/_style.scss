@@ -248,6 +248,9 @@ background: linear-gradient(variables.$color-secundario,gray);
 
 .email {
 text-align: center;
+background: repeating-linear-gradient(90deg, lightblue 10%, white 15%);
+padding: 10px;
+border: variables.$border-standard;
 }
 
 .cajitas {
@@ -346,11 +349,48 @@ display: block;
     top: 30px;
 }
 }
+.centrador{
+    display: flex;
+    justify-content: center;
+}
 @media (min-width: 768px){
     h1{
         font-size: 30px;
     }
-    
+    .menu{
+        div{
+            width: 600px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+    .servicios{
+        div{
+            width: 600px;
+            margin: 20px 0 20px 0 ;
+        }
+    }
+    .nosotros{
+        div{
+            width: 500px;
+            height: 170px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    }
+    .mision-vision{
+        width: 500px;
+    }
+    .centrar{
+        margin-top: 10px;
+    }
+    .opiniones{
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+        div{
+            width: 500px;
+        }
+    }
 }
 
 @media (min-width: 1100px) {
