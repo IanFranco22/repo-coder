@@ -17,6 +17,7 @@ body {
 h1 {
   padding: 40px;
   font-size: large;
+  color: lightblue;
 }
 
 h2 {
@@ -32,7 +33,7 @@ a {
 }
 
 header {
-  background: linear-gradient(rgb(158, 194, 248), gray);
+  background-image: url(../multimedia/banner.jpg);
   text-align: center;
 }
 header img {
@@ -81,11 +82,17 @@ header, header h2 {
   text-align: center;
   background: linear-gradient(rgb(185, 182, 181), gray);
 }
-.menu p {
+.menu div {
+  background: linear-gradient(lightblue 5%, white);
+}
+.menu p, .menu a {
   font-size: 30px;
+  border-radius: 10px;
 }
 .menu img {
   width: 200px;
+  border: 10px solid rgb(2, 247, 255);
+  border-radius: 10px;
 }
 
 .servicios {
@@ -103,6 +110,7 @@ header, header h2 {
   padding: 10px 100px;
   border: 5px double blue;
   border-radius: 10px;
+  background: linear-gradient(rgb(158, 194, 248), gray);
 }
 
 button {
@@ -143,6 +151,9 @@ button {
   text-align: center;
   justify-content: center;
   justify-items: center;
+}
+.nosotros div {
+  background: radial-gradient(yellow, white, lightblue 50%);
 }
 
 .mision-vision {
@@ -187,6 +198,7 @@ button {
 .opiniones div {
   border: 5px double blue;
   border-radius: 10px;
+  background: linear-gradient(lightblue 5%, white);
 }
 
 .contacto {
@@ -197,6 +209,9 @@ button {
   gap: 4rem;
   flex-wrap: wrap;
   padding: 2rem;
+}
+.contacto div {
+  padding-top: 10px;
 }
 
 .item {
@@ -308,6 +323,11 @@ button {
     top: 30px;
   }
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 @media (min-width: 1100px) {
   header img {
     width: 10rem;
@@ -371,6 +391,7 @@ button {
     text-align: center;
     justify-content: center;
     justify-items: center;
+    padding: 10px 0 10px 0;
   }
   .nosotros div {
     border: 5px solid rgb(2, 247, 255);
@@ -392,13 +413,14 @@ button {
     display: grid;
     grid-template-columns: 300px 300px;
     justify-content: space-evenly;
+    margin-top: 20px;
   }
   .opiniones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr;
     background-color: rgb(185, 182, 181);
-    grid-template-areas: ". opi1" "opi2 ." ". opi3" "opi4 .";
+    padding-top: 30px;
   }
   button:hover {
     transform: scale(1.1);
