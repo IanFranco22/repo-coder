@@ -1,0 +1,3 @@
+Este sitio web es un proyecto diseñado para el curso de Desarrollo Web de la plataforma CoderHouse.
+Su objetivo es aplicar y demostrar los conocimientos adquiridos sobre HTML, CSS y buenas prácticas de diseño web, creando una estructura de páginas que representen a una empresa de tecnología ficticia llamada TecnoArg.
+El proyecto incluye páginas de inicio, servicios, sobre nosotros, testimonios y contacto, con diseño responsive y organización de contenidos.
