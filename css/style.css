@@ -95,6 +95,15 @@ header, header h2 {
   border-radius: 10px;
 }
 
+.sub {
+  color: lightblue;
+  padding-bottom: 10px;
+}
+
+.marg {
+  margin: 10px 0 10px 0;
+}
+
 .servicios {
   display: flex;
   flex-direction: column;
@@ -155,6 +164,10 @@ button {
 }
 .nosotros div {
   background: radial-gradient(yellow, white, lightblue 50%);
+  border-radius: 10px;
+}
+.nosotros .item4 {
+  margin-bottom: 20px;
 }
 
 .mision-vision {
@@ -165,22 +178,22 @@ button {
 }
 
 .mision {
-  background-color: rgb(221, 236, 134);
+  background: linear-gradient(rgb(158, 194, 248), rgb(105, 87, 87));
   border: 5px solid rgb(2, 247, 255);
   border-radius: 10px;
   padding: 10px;
-  color: blue;
+  color: black;
 }
 .mision h3 {
   color: rgb(80, 77, 238);
 }
 
 .vision {
-  background-color: rgb(80, 77, 238);
+  background: linear-gradient(rgb(105, 87, 87), rgb(158, 194, 248));
   border: 5px solid rgb(2, 247, 255);
   border-radius: 10px;
   padding: 10px;
-  color: yellow;
+  color: black;
 }
 .vision h3 {
   color: rgb(221, 236, 134);
@@ -213,6 +226,10 @@ button {
 }
 .contacto div {
   padding-top: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.contacto div:hover {
+  transform: scale(1.1);
 }
 
 .item {
@@ -238,14 +255,13 @@ button {
 
 .cajitas {
   width: 300px;
-  margin-bottom: 40px;
+  margin: 10px auto 40px auto;
   border: 5px solid rgb(7, 235, 252);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 0 auto;
   background: linear-gradient(45deg, lightblue, gray);
 }
 .cajitas label,
@@ -263,6 +279,10 @@ button {
 .cajitas input[type=submit] {
   width: auto;
   cursor: pointer;
+}
+.cajitas input[type=submit]:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
 }
 
 .formulario {
@@ -459,6 +479,10 @@ button {
   .nosotros div {
     border: 5px solid rgb(2, 247, 255);
     border-radius: 10px;
+  }
+  .nosotros div img {
+    height: 100px;
+    width: 100px;
   }
   .item1 {
     grid-area: it1;

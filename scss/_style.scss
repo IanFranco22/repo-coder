@@ -75,6 +75,7 @@ li {
     color: variables.$color-texto;
     font-weight: 600;
 }
+
 }
 
 .menu {
@@ -103,6 +104,13 @@ img {
     border-radius: variables.$radius;
 }
 
+}
+.sub{
+    color: lightblue;
+    padding-bottom: 10px;
+}
+.marg{
+    margin: 10px 0 10px 0;
 }
 
 .servicios {
@@ -165,7 +173,11 @@ justify-content: center;
 justify-items: center;
 
 div{
-    background: radial-gradient(yellow, white, lightblue 50%) ;
+    background: radial-gradient(yellow, white, lightblue 50%);
+    border-radius: 10px;
+}
+.item4{
+    margin-bottom: 20px;
 }
 }
 
@@ -179,11 +191,11 @@ justify-content: space-evenly;
 }
 
 .mision {
-background-color: variables.$color-claro;
+background: linear-gradient(variables.$color-primario, variables.$color-footer);
 border: 5px solid variables.$color-secundario;
 border-radius: 10px;
 padding: 10px;
-color: blue;
+color: black;
 
 h3 {
     color: variables.$color-titulo;
@@ -191,11 +203,11 @@ h3 {
 }
 
 .vision {
-background-color: variables.$color-titulo;
+background: linear-gradient(variables.$color-footer, variables.$color-primario);
 border: 5px solid variables.$color-secundario;
 border-radius: 10px;
 padding: 10px;
-color: yellow;
+color: black;
 
 h3 {
     color: variables.$color-claro;
@@ -218,7 +230,6 @@ div {
     background:linear-gradient(lightblue 5%, white) ;
 }
 }
-
 .contacto {
 display: flex;
 flex-direction: row;
@@ -230,6 +241,8 @@ padding: 2rem;
 
 div{
     padding-top: 10px;
+    &:hover{transform: scale(1.1);}
+    transition: all ease-in-out 0.3s;
 }
 }
 
@@ -256,14 +269,13 @@ border: variables.$border-standard;
 
 .cajitas {
 width: 300px;
-margin-bottom: 40px;
+margin: 10px auto 40px auto;
 border: 5px solid rgb(7, 235, 252);
 border-radius: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 10px;
-margin: 0 auto;
 background: linear-gradient(45deg, lightblue, gray);
 
 label,
@@ -283,6 +295,10 @@ textarea {
 input[type='submit'] {
     width: auto;
     cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: all ease-in-out 0.3s;
+    }
 }
 }
 
@@ -495,6 +511,10 @@ body {
 .nosotros div {
     border: 5px solid variables.$color-secundario;
     border-radius: 10px;
+    img{
+        height: 100px;
+        width: 100px;
+    }
 }
 .item1 {
     grid-area: it1;
